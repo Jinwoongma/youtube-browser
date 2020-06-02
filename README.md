@@ -20,7 +20,7 @@
 
 <img src="https://user-images.githubusercontent.com/52685250/68567124-91284980-049b-11ea-9a3b-0ada5a70ff3c.JPG" width="600px">
 
-<img src="C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20200602101119984.png" alt="image-20200602101119984" style="zoom:80%;" />
+<img src="img/image-20200602140354253.png" alt="image-20200602140354253" style="zoom:80%;" />
 
 ---
 
@@ -888,7 +888,7 @@
 
 :checkered_flag: <b>최종 결과 화면</b>
 
-<img src="img/image-20200602102119186.png" alt="image-20200602102119186" width="800px" />
+![image-20200602140558974](img/image-20200602140558974.png)
 
 ---
 
