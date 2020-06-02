@@ -20,7 +20,7 @@
 
 <img src="https://user-images.githubusercontent.com/52685250/68567124-91284980-049b-11ea-9a3b-0ada5a70ff3c.JPG" width="600px">
 
-<img src="/img/image-20200602101119984.png" alt="image-20200602101119984" style="zoom:80%;" />
+<img src="img/image-20200602101119984.png" alt="image-20200602101119984" style="zoom:80%;" />
 
 ---
 
