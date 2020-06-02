@@ -3,7 +3,7 @@
         <img :src="thumbnailUrl">
         <div class='media-container'>
             <div class='media-body '>
-                <p v-html="video.snippet.title"></p>
+                <p> {{ video.snippet.title }}</p>
             </div>
             <div class='midea-subbody'>
                 <small>{{ video.snippet.channelTitle }}</small>

@@ -20,7 +20,7 @@
 
 <img src="https://user-images.githubusercontent.com/52685250/68567124-91284980-049b-11ea-9a3b-0ada5a70ff3c.JPG" width="600px">
 
-<img src="img/image-20200602140354253.png" alt="image-20200602140354253" style="zoom:80%;" />
+<img src="img/image-20200602140354253.png" alt="image-20200602140354253" width="700px" />
 =======
 ---
 
@@ -630,17 +630,35 @@
 
 ![005](https://user-images.githubusercontent.com/52685250/68562720-39371600-048e-11ea-8c4e-adfb4a8c61d3.JPG)
 
-<br>
+- `v-html` 속성을 이용하면 특수문자 깨짐 현상을 막을 수 있다.
 
-### 6. VideoDetail 컴포넌트 구성(조금 어려움)
+- 하지만, `v-html`은 script 태그를 그대로 바인딩하기 때문에 보안상 취약하다. (XSSㅣCross Site Scripting 취약점으로 인해 지양해야함)
+
+- `v-html`을 사용하지 않고, 인코딩 오류를 해결하기 위해서는 APP.vue의 methods 에서 영상 정보를 받아와서 videos에 저장할 때, 받아온 데이터의 item(video)을 forEach 문으로 각각 검사하는 방법을 적용할 수 있음
+
+  ```javascript
+  .then(response => {
+          response.data.items.forEach(item => {
+            const parser = new DOMParser()
+            const doc = parser.parseFromString(item.snippet.title, 'text/html')
+            item.snippet.title = doc.body.innerText
+          }) 
+          this.videos = response.data.items
+          this.selectedVideo = this.videos[0]
+        })
+  ```
+
+  
+
+  <br>
+
+### 6. VideoDetail 컴포넌트 구성
 
 - 데이터 전달 과정(컴포넌트 간의 관계를 잘 생각하자!)
   - `VideoListItem.vue` 에서 `VideoList.vue`로 데이터를 올리고,  다시 이를 `App.vue`로 올린다.
   - 그리고 `VideoDetail.vue`로 데이터를 내려 보내준다.
 
 > `VideoListItem.vue`
->
-> - `v-html` 속성을 이용하면 특수문자 깨짐 현상을 막을 수 있다.
 >
 > ```vue
 > <template>

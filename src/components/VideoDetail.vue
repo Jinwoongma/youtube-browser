@@ -5,7 +5,8 @@
       </div>
 
       <div class="details">
-         <h4 v-html="video.snippet.title"></h4>
+         <!-- <h4 v-html="video.snippet.title"></h4> -->
+         <h4>{{ video.snippet.title }}</h4>
          <p>{{ video.snippet.description }}</p>
      </div>
   </div>
@@ -31,6 +32,7 @@ export default {
 <style scoped>
   .details {
      margin-top: 10px;
+     margin-bottom: 10px;
      padding: 10px;
      border: 1px solid #ddd;
      border-radius: 4px;
