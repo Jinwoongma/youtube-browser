@@ -20,12 +20,8 @@
 
 <img src="https://user-images.githubusercontent.com/52685250/68567124-91284980-049b-11ea-9a3b-0ada5a70ff3c.JPG" width="600px">
 
-<<<<<<< HEAD
 <img src="img/image-20200602140354253.png" alt="image-20200602140354253" style="zoom:80%;" />
 =======
-<img src="img/image-20200602101119984.png" alt="image-20200602101119984" style="zoom:80%;" />
->>>>>>> 206561b1bff9695624bb8bb546f1aa38fa7fdf3d
-
 ---
 
 :heavy_check_mark: <b>기본 세팅</b>
